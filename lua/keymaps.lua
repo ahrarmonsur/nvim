@@ -3,6 +3,7 @@
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+vim.keymap.set({ 'n', 'v', 'i' }, '<leader>j', '<Esc>', { silent = true })
 
 -- Remap for opening project directory
 vim.keymap.set('n', '<leader>pd', vim.cmd.Ex, { desc = 'Open [P]roject [D]irectory' })
