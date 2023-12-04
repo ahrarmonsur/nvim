@@ -2,6 +2,7 @@
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
+    wrap_results = true,
     mappings = {
       i = {
         ['<C-u>'] = false,
