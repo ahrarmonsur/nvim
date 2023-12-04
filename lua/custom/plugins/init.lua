@@ -1,4 +1,5 @@
 return {
-  require('custom.plugins.treesitter-playground'),
-  require('custom.plugins.undotree'),
+  'mbbill/undotree',
+  'nvim-treesitter/playground',
+  'theprimeagen/harpoon',
 }
