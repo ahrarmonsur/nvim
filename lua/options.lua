@@ -7,6 +7,7 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -38,5 +39,19 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Tab settings
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.smartindent = true
+
+-- Text wrap settings
+vim.o.wrap = false
+
+-- Buffer visual settings
+vim.o.scrolloff = 8
+
 
 -- vim: ts=2 sts=2 sw=2 et
