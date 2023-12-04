@@ -48,7 +48,8 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 
 -- Text wrap settings
-vim.o.wrap = false
+vim.o.wrap = true
+vim.o.linespace = true
 
 -- Buffer visual settings
 vim.o.scrolloff = 8
