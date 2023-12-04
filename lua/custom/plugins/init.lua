@@ -1,6 +1,6 @@
 return {
   'mbbill/undotree',
-
+  'martinsione/darkplus.nvim',
   'nvim-treesitter/playground',
   {
     'theprimeagen/harpoon',
