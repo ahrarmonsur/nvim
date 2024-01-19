@@ -21,7 +21,7 @@ keymap({ 'i' }, 'jj', '<Esc>', term_opts)
 
 -- Remap for opening project directory
 keymap('n', '<leader>pd', vim.cmd.Ex, { desc = 'Open [P]roject [D]irectory' })
-keymap('n', '<leader>d', ":Lex 20<cr>", { desc = 'Open Left [D]irectory' })
+keymap('n', '<leader>e', ":Lex 20<cr>", { desc = 'Open Left [E]xplorer' })
 
 -- Remap for dealing with word wrap
 keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -30,7 +30,7 @@ keymap('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 -- Diagnostic keymaps
 keymap('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 keymap('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-keymap('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+keymap('n', '<leader>fd', vim.diagnostic.open_float, { desc = 'Open [F]loating [D]iagnostic message' })
 keymap('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- Normal --
