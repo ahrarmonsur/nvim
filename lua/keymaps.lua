@@ -49,6 +49,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<leader>lb", ":b#<CR>", { desc = 'Go to [L]ast [B]uffer', silent = true } )
 
 -- Move text up and down
 keymap("n", "∆", ":m .+1<CR>==", opts)
