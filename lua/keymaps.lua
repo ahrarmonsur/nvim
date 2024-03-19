@@ -22,6 +22,7 @@ keymap({ 'i' }, 'jj', '<Esc>', term_opts)
 -- Remap for opening project directory
 keymap('n', '<leader>pd', vim.cmd.Ex, { desc = 'Open [P]roject [D]irectory' })
 keymap('n', '<leader>e', ":Lex 20<cr>", { desc = 'Open Left [E]xplorer' })
+keymap('n', '<leader>lb', ":b#<cr>", { desc = 'Open [L]ast [B]uffer' })
 
 -- Remap for dealing with word wrap
 keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
