@@ -2,6 +2,9 @@ return {
   -- Color scheme
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
+  -- Icons
+  'nvim-tree/nvim-web-devicons',
+
   -- Undo graph
   'mbbill/undotree',
 
@@ -34,5 +37,20 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+
+  -- Directory
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+
+  -- JSON Processor
+  {
+    "gennaro-tedesco/nvim-jqx",
+    event = {"BufReadPost"},
+    ft = { "json", "yaml" },
   },
 }
