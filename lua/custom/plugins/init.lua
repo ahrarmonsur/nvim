@@ -53,4 +53,7 @@ return {
     event = {"BufReadPost"},
     ft = { "json", "yaml" },
   },
+
+  -- Copilots
+  'Exafunction/codeium.vim',
 }
